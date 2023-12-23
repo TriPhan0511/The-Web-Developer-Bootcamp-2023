@@ -214,7 +214,7 @@
       </p>
 
       <!-- Sample 4.1 -->
-      <form>
+      <!-- <form>
         <div class="row mb-3">
           <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
           <div class="col-sm-10">
@@ -272,10 +272,251 @@
             </div>
           </div>
         </fieldset>
+      </form> -->
+
+      <!-- Sample 4.2: Horizontal form label sizing -->
+      <!-- Be sure to use <code>.col-form-label-sm</code> or
+      <code>.col-form-label-lg</code> to your <code>labels</code> or
+      <code>legends</code> to correctly follow the size of
+      <code>.form-control-lg</code> and <code>.form-control-sm</code>. -->
+      <!-- <div class="row mb-3">
+        <label
+          for="colFormLabelSm"
+          class="col-sm-2 col-form-label col-form-label-sm"
+          >Email</label
+        >
+        <div class="col-sm-10">
+          <input
+            type="email"
+            class="form-control form-control-sm"
+            id="colFormLabelSm"
+            placeholder="col-form-label-sm"
+          />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input
+            type="email"
+            class="form-control"
+            id="colFormLabel"
+            placeholder="col-form-label"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <label
+          for="colFormLabelLg"
+          class="col-sm-2 col-form-label col-form-label-lg"
+          >Email</label
+        >
+        <div class="col-sm-10">
+          <input
+            type="email"
+            class="form-control form-control-lg"
+            id="colFormLabelLg"
+            placeholder="col-form-label-lg"
+          />
+        </div>
+      </div> -->
+
+      <!-- Sample 5: Column sizing -->
+      <!-- <div class="row g-3">
+        <div class="col-sm-7">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="City"
+            aria-label="City"
+          />
+        </div>
+        <div class="col-sm">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="State"
+            aria-label="State"
+          />
+        </div>
+        <div class="col-sm">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Zip"
+            aria-label="Zip"
+          />
+        </div>
+      </div> -->
+
+      <!-- Sample 6.1: Auto-sizing -->
+      <!-- The example below uses a flexbox utility to vertically center the contents
+      and changes <code>.col</code> to <code>.col-auto</code> so that your
+      columns only take up as much space as needed. Put another way, the column
+      sizes itself based on the contents. -->
+      <!-- <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+          <label class="visually-hidden" for="autoSizingInput">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="autoSizingInput"
+            placeholder="Jane Doe"
+          />
+        </div>
+        <div class="col-auto">
+          <label class="visually-hidden" for="autoSizingInputGroup"
+            >Username</label
+          >
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input
+              type="text"
+              class="form-control"
+              id="autoSizingInputGroup"
+              placeholder="Username"
+            />
+          </div>
+        </div>
+        <div class="col-auto">
+          <label class="visually-hidden" for="autoSizingSelect"
+            >Preference</label
+          >
+          <select class="form-select" id="autoSizingSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="autoSizingCheck"
+            />
+            <label class="form-check-label" for="autoSizingCheck">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form> -->
+
+      <!-- Sample 6.2 -->
+      <!-- You can then remix that once again with size-specific column classes. -->
+      <!-- <form class="row gx-3 gy-2 align-items-center">
+        <div class="col-sm-3">
+          <label class="visually-hidden" for="specificSizeInputName"
+            >Name</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="specificSizeInputName"
+            placeholder="Jane Doe"
+          />
+        </div>
+        <div class="col-sm-3">
+          <label class="visually-hidden" for="specificSizeInputGroupUsername"
+            >Username</label
+          >
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input
+              type="text"
+              class="form-control"
+              id="specificSizeInputGroupUsername"
+              placeholder="Username"
+            />
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <label class="visually-hidden" for="specificSizeSelect"
+            >Preference</label
+          >
+          <select class="form-select" id="specificSizeSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="autoSizingCheck2"
+            />
+            <label class="form-check-label" for="autoSizingCheck2">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form> -->
+
+      <!-- Sample 7: Inline forms -->
+      <!-- Use the <code>.row-cols-*</code> classes to create responsive horizontal
+      layouts. By adding gutter modifier classes, we'll have gutters in
+      horizontal and vertical directions. On narrow mobile viewports, the
+      <code>.col-12</code> helps stack the form controls and more. The
+      <code>.align-items-center</code> aligns the form elements to the middle,
+      making the <code>.form-check</code> align properly. -->
+      <form class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-12">
+          <label class="visually-hidden" for="inlineFormInputGroupUsername"
+            >Username</label
+          >
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername"
+              placeholder="Username"
+            />
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label class="visually-hidden" for="inlineFormSelectPref"
+            >Preference</label
+          >
+          <select class="form-select" id="inlineFormSelectPref">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="inlineFormCheck"
+            />
+            <label class="form-check-label" for="inlineFormCheck">
+              Remember me
+            </label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
       </form>
     </div>
 
-    <div style="height: 100vh"></div>
+    <div style="height: 70vh"></div>
     <!-- Bootstrap v5.2.3 JS -->
     <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
   </body>
