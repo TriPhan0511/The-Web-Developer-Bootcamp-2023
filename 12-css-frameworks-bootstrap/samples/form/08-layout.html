@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap v5.2.3 CSS -->
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <title>Layout</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-5 text-center text-primary">Layout</h1>
+      <p class="lead mb-5">
+        Give your forms some structure—from inline to horizontal to custom grid
+        implementations—with our form layout options.
+      </p>
+
+      <h2 class="display-6">Forms</h2>
+      <p>
+        Every group of form fields should reside in a
+        <code>form</code> element. Bootstrap provides no default styling for the
+        <code>form</code>
+        element, but there are some powerful browser features that are provided
+        by default.
+      </p>
+      <ul>
+        <li>
+          New to browser forms? Consider reviewing
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+            >the MDN form docs</a
+          >
+          for an overview and complete list of available attributes.
+        </li>
+        <li>
+          <code>buttons</code> within a <code>form</code> default to
+          type="submit", so strive to be specific and always include a type.
+        </li>
+      </ul>
+      <p>
+        Since Bootstrap applies display: block and width: 100% to almost all our
+        form controls, forms will by default stack vertically. Additional
+        classes can be used to vary this layout on a per-form basis.
+      </p>
+
+      <h2 class="display-6">Utilities</h2>
+      <p>
+        <a href="https://getbootstrap.com/docs/5.2/utilities/spacing/"
+          >Margin utilities</a
+        >
+        are the easiest way to add some structure to forms. They provide basic
+        grouping of labels, controls, optional form text, and form validation
+        messaging. We recommend sticking to margin-bottom utilities, and using a
+        single direction throughout the form for consistency.
+      </p>
+      <p>
+        Feel free to build your forms however you like, with
+        <code>fieldsets</code>, <code>divs</code>, or nearly any other element.
+      </p>
+
+      <!-- Sample 1: Margin utilities -->
+      <!-- <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label"
+          >Example label</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput"
+          placeholder="Example input placeholder"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label"
+          >Another label</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="formGroupExampleInput2"
+          placeholder="Another input placeholder"
+        />
+      </div> -->
+
+      <h2 class="display-6">Form grid</h2>
+      <p>
+        More complex forms can be built using our grid classes. Use these for
+        form layouts that require multiple columns, varied widths, and
+        additional alignment options. <strong>Requires the</strong>
+        <code>$enable-grid-classes</code>
+        <strong>Sass variable to be enabled</strong> (on by default).
+      </p>
+
+      <!-- Sample 2: Form grid -->
+      <!-- <div class="row">
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First name"
+            aria-label="First name"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last name"
+            aria-label="Last name"
+          />
+        </div>
+      </div> -->
+
+      <h2 class="display-6">Gutters</h2>
+      <p>
+        By adding
+        <a href="https://getbootstrap.com/docs/5.2/layout/gutters/"
+          >gutter modifier classes</a
+        >, you can have control over the gutter width in as well the inline as
+        block direction. <strong>Also requires the</strong>
+        <code>$enable-grid-classes</code>
+        <strong>Sass variable to be enabled</strong> (on by default).
+      </p>
+
+      <!-- Sample 3.1: Gutters -->
+      <!-- <div class="row g-3">
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First name"
+            aria-label="First name"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last name"
+            aria-label="Last name"
+          />
+        </div>
+      </div> -->
+
+      <!-- Sample 3.2: More complex layouts can also be created with the grid system. -->
+      <!-- <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="email" id="inputEmail" class="form-control" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword" class="form-label">Password</label>
+          <input type="password" id="inputPassword" class="form-control" />
+        </div>
+        <div class="col-md-12">
+          <label for="inputAddress1" class="form-label">Address</label>
+          <input type="text" id="inputAddress1" class="form-control" />
+        </div>
+        <div class="col-md-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input
+            type="text"
+            id="inputAddress2"
+            class="form-control"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" id="inputCity" class="form-control" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option value="california">California</option>
+            <option value="texas">Texas</option>
+            <option value="florida">Florida</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" id="inputZip" class="form-control" />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="d-grid d-md-block">
+          <button class="btn btn-primary" type="submit">Sign in</button>
+        </div>
+      </form> -->
+
+      <h2 class="display-6">Horizontal form</h2>
+      <p>
+        Create horizontal forms with the grid by adding the .row class to form
+        groups and using the .col-*-* classes to specify the width of your
+        labels and controls. Be sure to add <code>.col-form-label</code> to your
+        <code>labels</code> as well so they're vertically centered with their
+        associated form controls.
+      </p>
+      <p>
+        At times, you maybe need to use margin or padding utilities to create
+        that perfect alignment you need. For example, we've removed the
+        <code>padding-top</code> on our stacked radio inputs label to better
+        align the text baseline.
+      </p>
+
+      <!-- Sample 4.1 -->
+      <form>
+        <div class="row mb-3">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" id="inputEmail" class="form-control" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword" class="col-sm-2 col-form-label"
+            >Password</label
+          >
+          <div class="col-sm-10">
+            <input type="password" id="inputPassword" class="form-control" />
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                type="radio"
+                name="gridRadios"
+                id="gridRadios1"
+                class="form-check-input"
+                value="option1"
+                checked
+              />
+              <label for="gridRadios1" class="form-check-label"
+                >First radio</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                name="gridRadios"
+                id="gridRadios2"
+                class="form-check-input"
+                value="option1"
+              />
+              <label for="gridRadios2" class="form-check-label"
+                >Second radio</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                name="gridRadios"
+                id="gridRadios3"
+                class="form-check-input"
+                value="option1"
+                disabled
+              />
+              <label for="gridRadios3" class="form-check-label"
+                >Third diabled radio</label
+              >
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div style="height: 100vh"></div>
+    <!-- Bootstrap v5.2.3 JS -->
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
